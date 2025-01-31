@@ -201,3 +201,23 @@ We welcome contributions! Please follow these steps to contribute:
 
 ---
 
+## Docker Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/faq-management.git
+   cd faq-management
+
+2. Build and start the containers:
+        docker-compose up --build
+3. Run migrations:
+        docker-compose exec web python manage.py migrate
+4. Create a superuser:
+        docker-compose exec web python manage.py createsuperuser
+5. Access the application:
+
+    Django app: http://localhost:8000/
+
+    Admin panel: http://localhost:8000/admin/
+
+    
